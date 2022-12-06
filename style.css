@@ -24,7 +24,7 @@
     --cor02: #7B942B;
     --cor03: #3C4715;
     --cor04: #41472A;
-    
+
     /*fontes do projeto*/
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Jura', cursive;
@@ -46,13 +46,13 @@ a.externo::after {
 
 header {
     min-height: 150px;
-    margin: auto;   
+    margin: auto;
     background-color: var(--cor04);
     border-radius: 0px 0px 15px 15px;
     padding: 10px 10px 0px 10px;
 }
 
-header > h1{
+header>h1 {
     color: var(--corWh);
     font-family: var(--fonte-destaque);
     text-align: center;
@@ -62,30 +62,30 @@ header > h1{
     text-shadow: 2px 2px 2px rgb(32, 16, 16);
 }
 
-header p {
+header>p {
     color: var(--corWh);
     text-align: center;
     font-weight: normal;
     font-size: 1.5em;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-shadow: 2px 2px 2px rgb(32, 16, 16);
 }
 
-header > nav {
+header>nav {
     text-align: center;
     margin-bottom: 0px;
 }
 
-header > nav > a {
+header>nav>a {
     color: var(--cor00);
     margin: 15px;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-    
+
 }
 
-header > nav > a:hover {
+header>nav>a:hover {
     background-color: var(--cor00);
     color: var(--cor04);
     border-radius: 25px 25px 0px 0px;
@@ -113,7 +113,8 @@ main img {
 }
 
 main img.pequena {
-    max-width: 350px; /*resolution of image*/
+    max-width: 350px;
+    /*resolution of image*/
     display: block;
     margin: auto;
 }
@@ -131,7 +132,7 @@ main strong {
     font-weight: bold;
 }
 
-main > a {
+main>a {
     text-decoration: none;
     font-weight: bold;
     color: var(--cor01);
@@ -153,7 +154,7 @@ div.video {
     position: relative;
 }
 
-div.video > iframe {
+div.video>iframe {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -171,19 +172,19 @@ aside {
     margin-top: 15px;
 }
 
-aside > h1 {
-    background-color:var(--cor02);
+aside>h1 {
+    background-color: var(--cor02);
     padding: 14px;
     border-radius: 15px 15px 0px 0px;
     margin: -15px -15px 0px -15px;
     margin-bottom: 15px;
 }
 
-aside > p {
+aside>p {
     margin-bottom: 15px;
 }
 
-aside > ul {
+aside>ul {
     margin: 30px;
     list-style-type: '\2714\00A0\00A0';
     columns: 2;
