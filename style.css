@@ -5,15 +5,24 @@
 
 /*fonte idroid (local)*/
 @font-face {
-    font-family: 'Android';
-    src: url('fontes/idroid.otf');
+    font-family: 'android';
+    src: url('/fontes/Android.ttf');
+}
+
+@font-face {
+    font-family: 'technology';
+    src: url(/fontes/technology_2/Technology.ttf);
+}
+
+@font-face {
+    font-family: 'technology-bold';
+    src: url(/fontes/technology_2/Technology-Bold.ttf);
 }
 
 /*reset config HTML */
 * {
     margin: 0px;
     padding: 0px;
-
 }
 
 :root {
@@ -24,18 +33,28 @@
     --cor02: #7B942B;
     --cor03: #3C4715;
     --cor04: #41472A;
+    --corAndroid12: #1E6D41;
 
     /*fontes do projeto*/
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Jura', cursive;
     --fonte-android: 'Android', cursive;
+    --fonte-androidRobot: 'android';
+    --fonte-technology: 'technology';
+    --fonte-technology-bold: 'technology-bold';
+    --fonte-technology-boldItalic: 'technology-boldItalic';
+    --fonte-technology-italic: 'technology-italic';
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--cor01), var(--cor00));
+    /*background-image: linear-gradient(to bottom, var(--cor01), var(--cor00));*/
+    /*background-color: var(--corAndroid12);*/
+    background-image: url(/imagens/bgAndroid12.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--corWh);
     font-family: var(--fonte-destaque);
     margin: 0px;
-    color: var(--corWh);
     text-align: justify;
 }
 
@@ -45,16 +64,19 @@ a.externo::after {
 
 
 header {
-    min-height: 150px;
-    margin: auto;
     background-color: var(--cor04);
-    border-radius: 0px 0px 15px 15px;
+    opacity: 0.7;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     padding: 10px 10px 0px 10px;
+    min-height: 150px;
 }
 
 header>h1 {
     color: var(--corWh);
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-androidRobot);
     text-align: center;
     font-size: 3em;
     font-weight: normal;
@@ -63,6 +85,7 @@ header>h1 {
 }
 
 header>p {
+    font-family: var(--fonte-technology);
     color: var(--corWh);
     text-align: center;
     font-weight: normal;
@@ -72,6 +95,7 @@ header>p {
 }
 
 header>nav {
+    font-family: var(--fonte-technology-bold);
     text-align: center;
     margin-bottom: 0px;
 }
@@ -97,6 +121,7 @@ main {
     max-width: 1000px;
     margin: auto;
     background-color: var(--cor03);
+    opacity: 0.7;
     padding: 20px;
     border-radius: 0px 0px 15px 15px;
 }
@@ -165,6 +190,7 @@ div.video>iframe {
 
 aside {
     background-color: var(--cor04);
+    opacity: 0.7;
     color: var(--corWh);
     padding: 15px;
     border-radius: 15px 15px 15px 15px;
@@ -193,6 +219,7 @@ aside>ul {
 footer {
     margin: auto;
     background-color: var(--cor04);
+    opacity: 0.7;
     border-radius: 15px 15px 0px 0px;
     padding: 10px;
     text-align: center;
